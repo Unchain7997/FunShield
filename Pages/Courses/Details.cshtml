@@ -1,0 +1,29 @@
+@page "{id:int}"
+@model FunShield.Pages.Courses.DetailsModel
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<h2>@Model.Course.Title</h2>
+<p>@Model.Course.Description</p>
+<p><strong>Language:</strong> @Model.Course.Language</p>
+
+<h3>Enrolled Students</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.FirstName @student.LastName</td>
+                <td>@student.Grade</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="Index" class="btn btn-secondary">Back to Courses</a>

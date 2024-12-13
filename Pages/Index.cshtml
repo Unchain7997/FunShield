@@ -1,0 +1,99 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <div class="container mt-3">
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/Home.webp" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Engaging Activities</h5>
+                        <p>Homework Assistance, STEM, Coding, and more!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Kids.jpeg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Safe & Fun Environment</h5>
+                        <p>Your child's growth and happiness are our priorities.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/STEM.webp" class="card-img-top" alt="STEM Innovators">
+                <div class="card-body">
+                    <h5 class="card-title">STEM Innovators</h5>
+                    <p class="card-text">Hands-on science and technology projects.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/CHEFS.webp" class="card-img-top" alt="Little Chefs Club">
+                <div class="card-body">
+                    <h5 class="card-title">Little Chefs Club</h5>
+                    <p class="card-text">Basic cooking lessons.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/CRAFT.webp" class="card-img-top" alt="Creative Crafts">
+                <div class="card-body">
+                    <h5 class="card-title">Creative Crafts</h5>
+                    <p class="card-text">Artistic activities for skill building.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/img/Logo.jpeg" class="img-fluid rounded" alt="FunShield Logo">
+            </div>
+            <div class="col-md-8">
+                <h3>About FunShield</h3>
+                <table class="table table-bordered mt-3">
+                    <tbody>
+                        <tr>
+                            <th>Project</th>
+                            <td>Bilingual After-School Program</td>
+                        </tr>
+                        <tr>
+                            <th>Mission</th>
+                            <td>Empower elementary school students with academic support, creative development, and life skills training.</td>
+                        </tr>
+                        <tr>
+                            <th>Environment</th>
+                            <td>Safe and engaging environment tailored to children's growth and happiness.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

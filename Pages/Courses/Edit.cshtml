@@ -1,0 +1,28 @@
+@page "{id:int}"
+@model FunShield.Pages.Courses.EditModel
+@{
+    ViewData["Title"] = "Edit Course";
+}
+
+<h2>Edit Course</h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Course.Title" class="form-label"></label>
+        <input asp-for="Course.Title" class="form-control" />
+        <span asp-validation-for="Course.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group mt-3">
+        <label asp-for="Course.Description" class="form-label"></label>
+        <textarea asp-for="Course.Description" class="form-control"></textarea>
+        <span asp-validation-for="Course.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group mt-3">
+        <label asp-for="Course.Language" class="form-label"></label>
+        <input asp-for="Course.Language" class="form-control" />
+        <span asp-validation-for="Course.Language" class="text-danger"></span>
+    </div>
+    <div class="mt-4">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
